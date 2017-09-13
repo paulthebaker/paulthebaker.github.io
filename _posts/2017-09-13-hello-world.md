@@ -1,10 +1,12 @@
 ---
 title: "Hello World"
 modified:
-categories: 
+categories: blog
 excerpt: "Is this thing on?"
 tags: []
-date:
+date: 2017-09-13
+header:
+  teaser: /images/motown.jpg
 ---
 
 ![]({{ site.url }}/images/motown.jpg)
