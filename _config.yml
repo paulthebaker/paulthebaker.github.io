@@ -5,18 +5,18 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Paul T Baker"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Paul T Baker"
 description              : "my personal website"
 url                      : "https://paulthebaker.github.io/" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "paulthebaker/paulthebaker.github.io" # GitHub username/repo-name
-teaser                   : #  "images/logo" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "images/porcupine_road.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -80,7 +80,7 @@ analytics:
 # Site Author
 author:
   name             : "Paul T. Baker"
-  avatar           : # /images/bio_image.png # path of avatar image
+  avatar           : "images/PTB_shobac2016.jpg" # /images/bio_image.png # path of avatar image
   bio              : "I am a postdoc at the Center for Gravitational Waves and Cosmology at WVU."
   location         : "Morgantown, WV, USA"
   email            : "paultbaker@gmail.com"
@@ -100,7 +100,7 @@ author:
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
-  stackoverflow    : "2832354/paul-t" # (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  stackoverflow    : "2433679/paul-t" # (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          : "paul_the_baker"
@@ -243,7 +243,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
