@@ -8,6 +8,9 @@ date: 2017-09-15
 header:
   teaser: /images/wavelet_denoising/??.png
 ---
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+</script>
 
 For this post I'm taking you through a conceptual demonstration of the `FastBurst` algorithm to find gravitational wave (GW) bursts in LIGO data.
 This analysis uses no *a priori* knowledge of GW waveforms.
@@ -53,7 +56,7 @@ So our test signal must have these properties.
 We will generate 4 seconds of simulated data sampled at 128 Hz.
 The data will have a base of white noise with unit variance.
 To this noise we will inject a gaussian-windowed sinusoidal signal that spans about 1/4 sec of the data.
-This signal is compact in time (short duration) and in frequency (single dominate oscillation frequency).
+This signal is compact in time (short duration) and in frequency (single dominant oscillation frequency).
 
 $$ h(t) = A \exp\left(\frac{-\left(t-t_0\right)^2}{\tau^2}\right)\, \sin\left(2\pi\,f\,(t-t_0) + \phi_0\right) $$
 
