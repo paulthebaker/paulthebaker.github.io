@@ -41,6 +41,7 @@ Without the single dollar signs we must use `\( \)` for inline math.
 Sadly **all** special characters must be escaped with `\` for the html renderer to work right,
 so this must be entered as `\\( \\)` in practice.
 You'll also need to escape underscores `\_` and astrisks `\*` (and a few other things).
+For some unknown reason I needed to use six `\`s for the newline to work in the `align` environment (I expected to need four).
 
 ## example math code
 
@@ -55,7 +56,7 @@ The Newtonian gravitational potential is defined as
 
 We can find the gravitational field by taking the gradient of the potential
 
-$$ \vec{g} = -\vec{\nabla}\phi $$.
+$$ \vec{g} = -\vec{\nabla}\phi. $$
 
 The line element for Minkowski space is \\(\mathrm{d}s^2 = -dt^2 + dx^2 + dy^2 + dz^2\\)
 
@@ -67,8 +68,8 @@ in geometric units where \\(G=c=1\\).
 
 We can write Maxwell's equations in tensor form using the `align` environment
 \begin{align\*}
-  \mathrm{d}\mathcal{F} \&= 0 \\\\
-  ^\*\mathrm{d} ^\*\mathcal{F} \&= \mathcal{J}
+  \mathrm{d}\mathcal{F} & = 0, \\\\\\
+  ^\*\mathrm{d} ^\*\mathcal{F} & = \mathcal{J}.
 \end{align\*}
 ```
 
@@ -83,7 +84,7 @@ The Newtonian gravitational potential is defined as
 
 We can find the gravitational field by taking the gradient of the potential
 
-$$ \vec{g} = -\vec{\nabla}\phi $$.
+$$ \vec{g} = -\vec{\nabla}\phi. $$
 
 The line element for Minkowski space is \\(\mathrm{d}s^2 = -dt^2 + dx^2 + dy^2 + dz^2\\)
 
@@ -96,8 +97,8 @@ in geometric units where \\(G=c=1\\).
 We can write Maxwell's equations in tensor form using the `align` environment
 
 \begin{align\*}
-  \mathrm{d}\mathcal{F} & = 0 \\\\
-  ^\*\mathrm{d} ^\*\mathcal{F} & = \mathcal{J}
+  \mathrm{d}\mathcal{F} & = 0, \\\\\\
+  ^\*\mathrm{d} ^\*\mathcal{F} & = \mathcal{J}.
 \end{align\*}
 
 
