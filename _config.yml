@@ -62,7 +62,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # "images/logo" # Open Graph/Twitter default site image
+og_image                 : "images/porcupine_road.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -80,8 +80,8 @@ analytics:
 # Site Author
 author:
   name             : "Paul T. Baker"
-  avatar           : "images/PTB_shobac2016.jpg" # /images/bio_image.png # path of avatar image
-  bio              : "I am a postdoc at the Center for Gravitational Waves and Cosmology at WVU."
+  avatar           : "images/PTB_shobac2016.jpg" # path of avatar image
+  bio              : "postdoc at the Center for Gravitational Waves and Cosmology at WVU"
   location         : "Morgantown, WV, USA"
   email            : "paultbaker@gmail.com"
   uri              :
