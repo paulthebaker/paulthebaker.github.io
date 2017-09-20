@@ -5,7 +5,9 @@ categories: blog
 excerpt: "Is this thing on?"
 tags: []
 date: 2017-09-13
+comments: true
 header:
+  overlay_image: images/porcupine_road.jpg
   teaser: /images/motown.jpg
 ---
 

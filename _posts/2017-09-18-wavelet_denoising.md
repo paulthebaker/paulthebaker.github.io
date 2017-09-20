@@ -5,7 +5,9 @@ categories: blog
 excerpt: "a basic demonstration with simulated data"
 tags: [research, ligo]
 date: 2017-09-18
+comments: true
 header:
+  overlay_image: images/porcupine_road.jpg
   teaser: /images/wavelet_denoising/wavelet_denoising_basics_34_1.png
 ---
 

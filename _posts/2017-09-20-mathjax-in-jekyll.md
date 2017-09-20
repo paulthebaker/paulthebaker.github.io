@@ -5,7 +5,9 @@ categories: blog
 excerpt: "How to get MathJax to render equations"
 tags: [meta]
 date: 2017-09-20
+comments: true
 header:
+  overlay_image: images/porcupine_road.jpg
 ---
 
 It took me a bit to figure out how to get MathJax up and running to properly render equations in my posts.
