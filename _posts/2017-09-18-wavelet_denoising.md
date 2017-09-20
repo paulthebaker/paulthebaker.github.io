@@ -1,6 +1,6 @@
 ---
 title: "Wavelet Denoising for gravitational wave detection"
-modified:
+modified: 2017-09-20
 categories: blog
 excerpt: "a basic demonstration with simulated data"
 tags: [research, ligo]
@@ -29,9 +29,8 @@ jupyter nbconvert my_notebook.ipynb --to markdown
 I didn't, but I do now!
 
 If you want to run the notebook yourself, you can get it from [my github](https://github.com/paulthebaker/paulthebaker.github.io/blob/master/notebooks/wavelet_denoising_basics.ipynb).
-This notebook uses my own wavelet transform library, `wavelet.py` which is also available from my [my github](https://github.com/paulthebaker/paulthebaker.github.io/blob/master/notebooks/wavelet.py).
-The `scipy` wavelet tools leave a little something to be desired.
-In the future it will get it's own repo, and you will be able to install it with pip!... **in the future**.
+This notebook uses my own continuous wavelet transform module, [`wavelet`](https://github.com/paulthebaker/wavelet).
+It's not in PyPI yet, but you can install it with `pip` by following the instructions in the [docs](http://ptbwavelet.readthedocs.io/en/latest/installation.html)
 
 
 ```python
