@@ -52,9 +52,12 @@ So our test signal must have these properties.
 We will generate 4 seconds of simulated data sampled at 128 Hz.
 The data will have a base of white noise with unit variance.
 To this noise we will inject a gaussian-windowed sinusoidal signal that spans about 1/4 sec of the data.
-This signal is compact in time (short duration) and in frequency (single dominant oscillation frequency).
+By construction this signal is compact in time (short duration) and in frequency (single dominant oscillation frequency).
 
-$$ h(t) = A \exp\left(\frac{-\left(t-t_0\right)^2}{\tau^2}\right)\, \sin\left(2\pi\,f\,(t-t_0) + \phi_0\right) $$
+$$ h(t) = A \exp\left(\frac{-\left(t-t_0\right)^2}{\tau^2}\right)\, \sin\left(2\pi\,f_0\,(t-t_0) + \phi_0\right) $$
+
+\\(h(t)\\) is defined by five parameters: its amplitude, peak time, damping time, central frequency, and initial phase.
+Respectively, \\((A, t_0, \tau, f_0, \phi_0)\\).
 
 LIGO's detectors also contain non-Gaussian noise artifacts, that look a lot like GW signals.
 We will also generate a non-Gaussian noise *glitch*, that is a second gaussian-windowed sinusoid with a different frequency that spans a different (but overlapping) section of the data.
