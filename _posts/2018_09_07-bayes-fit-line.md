@@ -4,7 +4,7 @@ modified:
 categories: blog
 excerpt: "Solving a simple data analysis problem with Bayesian statistics"
 tags: [teaching, stats]
-date: 2018-06-20
+date: 2018-09-07
 comments: true
 header:
   overlay_image: images/porcupine_road.jpg
