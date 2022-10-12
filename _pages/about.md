@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 title: About
 permalink: /about/
-modified: 2017-09-13
+modified: 2022-10-12
 header:
   overlay_image: images/porcupine_road.jpg
 ---
@@ -14,7 +14,7 @@ I'm Paul T Baker.
 I'm an assistant professor in the Department of Physics and Astronomy at [Widener University][wu-me].
 I teach physics and study gravitational waves.
 
-Before coming to Widener, I was a postdoctoral fellow at the [Center for Gravitational Waves and Cosmology][gwac] at West Virginia University.  
+Before coming to Widener, I was a postdoctoral fellow at the [Center for Gravitational Waves and Cosmology][gwac] at West Virginia University.
 I have also taught as a visiting assistant professor at SUNY Geneseo, a public liberal arts college that is home to one of the largest all undergrad physics departments in the country.
 
 My research is mostly about on gravitational wave data analysis techniques.
