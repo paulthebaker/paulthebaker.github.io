@@ -12,8 +12,8 @@ header:
 
 I recently went back to some notes I wrote for a lecture on Bayesian statistics for first year astronomy graduate students.
 I think Bayesian statistics can be pretty straightforward in terms of the logic used to solve problems, however, the computational methods can be complicated.
-In the liturature when we see Bayesian methods in use we often see specialized, computationally expensive ones like Markov chain Monte Carlo (MCMC) and Nested Sampling.
-When it comes to multi-dimensional analyses or those with non-trivial correllation, these methods are often necessary.
+In the literature when we see Bayesian methods in use we often see specialized, computationally expensive ones like Markov chain Monte Carlo (MCMC) and Nested Sampling.
+When it comes to multi-dimensional analyses or those with non-trivial correlation, these methods are often necessary.
 For simpler 1D or 2D problems we can use similiarly simpler methods that better illustrate the underlying machinery of Bayesian data anlsyis.
 
 One of the most fundamental problems of data anlaysis is fitting a line to data.
@@ -112,7 +112,7 @@ We must marginalize the likelihood over all of the free parameters, in this case
 
 $$p\left(d \mid \mathcal{H}_v \right) = \int \mathrm{d}v \, p\left(v \mid \mathcal{H}_v \right)\, p\left( d \mid \mathcal{H}_v, v \right)$$
 
-This will give us the probability for constant velocity model averaged over all possible \\(v\\)'s rather than for a specific choice of one.
+This will give us the probability for the constant velocity model averaged over all possible \\(v\\)'s rather than for a specific choice of one.
 The integral has two terms: the likelihood as a function of \\(v\\) and the prior probability for \\(v\\).
 
 We'll use a Gaussian likelihood, which compares our model \\(m\\) to the data \\(d\\).
@@ -132,7 +132,7 @@ We will set a uniform prior for \\(v \in [0,50]\\) cm/s, which should be plenty 
 
 $$p\left(v \mid \mathcal{H}_v \right) = \frac{1}{\Delta v} = \frac{1}{50}$$
 
-We defint the posterior probability (prior times likelihood) as a function for convenience.
+We define the posterior probability (prior times likelihood) as a function for convenience.
 
 ```python
 def prob_line(v, dat):
@@ -234,7 +234,7 @@ $$p\left(d \mid \mathcal{H}_a \right) = \int \mathrm{d}v\,\mathrm{d}a \, p\left(
 We use the same Gaussian likelihood, but change our model, \\(m\\).
 
 \begin{align\*}
-  m_i = x_i &= v\, t_i + \frac{1}{2} a\, {t_1}^2, \\\\\\
+  m_i = x_i &= v\, t_i + \frac{1}{2} a\, {t_i}^2, \\\\\\
   p\left(d \mid \mathcal{H}_v, v \right) &= \left(\frac{1}{\sqrt{2\pi}\,\sigma}\right)^N \exp\left(- \frac{(d_i-m_i)^2}{2{\sigma}^2}\right)
 \end{align\*}
 
@@ -377,7 +377,7 @@ Are our measurements good enough to say whether or not the particle is accelerat
 
 ## Bayes Factor
 The Bayes factor is the ratio of the evidences for the two models.
-If we have no a priori preference for one model over the other the Bayes factor is equivalent to the betting odds.
+If we have no a priori preference for one model over the other, the Bayes factor is equivalent to the betting odds.
 From the odds we can compute the relative probability for each model.
 
 ```python
